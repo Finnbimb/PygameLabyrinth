@@ -62,7 +62,7 @@ def ist_frei(gitter, r, c):
         return False
     if r >= len(gitter) or c >= len(gitter[0]):
         return False
-    return gitter[r][c] == "0" or gitter[r][c] == "Z"
+    return gitter[r][c] == "0" or gitter[r][c] == "Z" or gitter[r][c] == "S"
 
 
 # ----------------------------------------------
@@ -222,3 +222,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
